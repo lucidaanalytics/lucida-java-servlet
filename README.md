@@ -6,14 +6,14 @@ the URL, method, path, IP and user agent. Built against the Apache-2.0 `tomcat-s
 
 ## Install
 
-From GitHub, [lucidaanalytics/lucida-java-servlet](https://github.com/lucidaanalytics/lucida-java-servlet), release `v0.1.0` (JitPack builds the tag; it needs the core SDK too):
+From GitHub, [lucidaanalytics/lucida-java-servlet](https://github.com/lucidaanalytics/lucida-java-servlet), release `v0.1.2` (JitPack builds the tag; it needs the core SDK too):
 
 ```kotlin
 // build.gradle.kts
 repositories { maven("https://jitpack.io") }
 dependencies {
-    implementation("com.github.lucidaanalytics:lucida-java:v0.1.0")
-    implementation("com.github.lucidaanalytics:lucida-java-servlet:v0.1.0") {
+    implementation("com.github.lucidaanalytics:lucida-java:v0.1.2")
+    implementation("com.github.lucidaanalytics:lucida-java-servlet:v0.1.2") {
         exclude(group = "io.github.lucidaanalytics", module = "lucida") // the core comes from JitPack above
     }
 }
